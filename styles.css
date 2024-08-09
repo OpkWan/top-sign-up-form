@@ -18,7 +18,7 @@
 
 aside {
   grid-area: aside;
-  background-image: url(/img/unsplash.jpg);
+  background-image: url(./img/unsplash.jpg);
   background-size: cover;
 
   display: flex;
