@@ -1,96 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up Form</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-<!-- The Container Begins -->
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="container">
-    
-
-<!-- The Left Side Of the Page Begins -->
-
-        <div class="left-side-container">
-            <img class="card-image" src="img/unsplash.jpg" alt="Background Image">
-            <div class="icon-body">
-                <img class="odin-icon" src="img/odin-lined.png" alt="Odin Icon">
-                <h1 class="icon-name">ODIN</h1>
-            </div> 
-        </div>
-
-        <!-- <div class="card-container">
-            <img class="card-image" src="https://picsum.photos/450/450">
-             <div class="card-body">
-               <div class="card-heading">This is a cool heading!</div>
-            <p class="card-paragraph">This is some cool placeholder text!</p>
-               
+      <aside>
+        <div class="img-container">
+          <div class="content">
+            <img src="/img/odin.png" alt="Odin Icon" />
+            <p class="icon-text">ODIN</p>
           </div>
-              </div> -->
-
-<!-- The Left Side Of the Page Ends -->
-
-<!-- The Right Side Of the Page Begins -->
-
-        <div class="right-side">
-            <div class="top">
-                <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>
-                Sign up <span class="italic">now</span> to get started.</h2>
-                <p>You <span class="italic">know</span> you want to.</p>
-            </div>
-
-<!-- The Form Begins -->
-
-            <div class="middle">
-                <h1>Let's do this!</h1>
-                <div class="left-part">
-                    <div>
-                        <label for="firstName">FIRST NAME</label><br>
-                        <input type="text" id="firstName">
-                    </div>
-                    <div>
-                        <label for="email">EMAIL</label><br>
-                        <input type="email" id="email">
-                    </div>
-                    <div>
-                        <label for="password">PASSWORD</label><br>
-                        <input type="password" id="password">
-                    </div>
-                </div>
-
-                <div class="right-part">
-                    <div>
-                        <label for="lastName">LAST NAME</label><br>
-                        <input type="text" id="lastName">
-                    </div>
-                    <div>
-                        <label for="telNo">PHONE NUMBER</label><br>
-                        <input type="number" id="telNo">
-                    </div>
-                    <div>
-                        <label for="confirmPassword">CONFIRM PASSWORD</label><br>
-                        <input type="password" id="confirmPassword">
-                    </div>
-                </div>
-            </div>
-
-<!-- The Form Ends -->
-
-            <div class="bottom">
-                <button>Create Account</button>
-                <p>Already have an account? <span class="login">Log in</span></p>
-            </div>
         </div>
+      </aside>
 
-<!-- The Right Side Of the Page Ends -->
+      <main>
+        <!-- Main content -->
 
+        <div class="row upper">
+          <h3>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+            <br />Sign up <em>now</em> to get started.
+          </h3>
+          <p>You <em>know</em> you want to.</p>
+        </div>
+        <div class="row middle">
+          <form>
+            <div class="form-container">
+              <div class="form-group">
+                <label for="firstname">FIRST NAME</label>
+                <input id="firstname" name="name" type="text" value="" pattern="^[^0-9]+$" size="30" maxlength="245" required>
+              </div>
+
+              <div class="form-group">
+                <label for="lastName">LAST NAME</label>
+                <input id="lastname" name="name" type="text" value="" pattern="^[^0-9]+$" size="30" maxlength="245" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email" value="" size="30" maxlength="100" required>EMAIL</label>
+                <input type="email" id="email" name="email" />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">PHONE NUMBER</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+
+              <div class="form-group">
+                <label for="pword">PASSWORD</label>
+                <input type="password" id="pword" name="password" />
+              </div>
+
+              <div class="form-group">
+                <label for="cpword">CONFIRM PASSWORD</label>
+                <input type="password" id="cpword" name="confpassword" />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="row lower">
+          <button type="submit">Create Account</button>
+          <p>Already have an account? <span>Log in</span></p>
+        </div>
+      </main>
     </div>
-
-<!-- The Container Ends -->
-
-</body>
+  </body>
 </html>
